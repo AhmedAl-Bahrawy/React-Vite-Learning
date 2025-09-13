@@ -21,14 +21,6 @@ body {
   min-height: 100vh;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
-  min-height: 100vh;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -40,13 +32,4 @@ body {
   button {
     background-color: #f9f9f9;
   }
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-weight: bold;
-  margin: 0.25em 0;
-  text-align: center;
 }

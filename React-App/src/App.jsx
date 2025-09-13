@@ -1,14 +1,14 @@
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Food from './Food.jsx'
 import './App.css'
+import Card from './Card'
 
 function App() {
   return (
     <div className="app">
-      <Header></Header>
-      <Food></Food>
-      <Footer></Footer>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </div>
     
   )
