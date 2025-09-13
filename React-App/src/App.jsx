@@ -1,14 +1,10 @@
-import './App.css'
-import Card from './Card'
+import styles from './App.module.css'
+import Button from './components/Button/Button.jsx'
 
 function App() {
   return (
-    <div className="app">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+    <div className={styles.app}>
+      <Button></Button>
     </div>
     
   )
