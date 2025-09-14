@@ -1,10 +1,12 @@
 import styles from './App.module.css'
-import Button from './components/Button/Button.jsx'
+import Student from './components/Student/Student.jsx'
 
 function App() {
   return (
     <div className={styles.app}>
-      <Button></Button>
+      <Student name="Ahmed Albahrawy" age={15} grade="A" isStudent={true}></Student>
+      <Student name="Ahmed Samir" age={14} isStudent={true}></Student>
+      <Student/>
     </div>
     
   )

@@ -1,0 +1,21 @@
+.student {
+    border: none;
+    border-radius: 25px;
+    background-color: beige;
+    color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    margin: 20px;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.student p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.student p:hover{
+    
+}
