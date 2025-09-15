@@ -1,14 +1,12 @@
 import styles from './App.module.css'
-import Button from './components/Button/Button';
-import ProfilePicture from './components/ProfilePicture/ProfilePicture';
+import Counter from './components/Counter/Counter';
 
 function App() {
 
   
   return (
     <div className={styles.app}>
-      <Button text="Hee Me"></Button>
-      <ProfilePicture></ProfilePicture>
+      <Counter />
     </div>
     
   );

@@ -1,16 +1,25 @@
 .ctaButton{
-    background-color: rgba(214, 29, 205, 0.733);
-    padding: 15px 25px;
+    background-color: rgba(165, 35, 35, 0.8);
     border: none;
     border-radius: 15px;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
+    padding: 15px 32px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.ctaButton:hover{
-    background-color: rgb(214, 29, 205);
+.ctaButton:hover {
+    background-color: rgba(165, 35, 35, 0.95);
     scale: 1.05;
+}
+
+.ctaButton:active {
+    background-color: rgba(192, 41, 41, 0.95);
+    scale: 1.05;
+    transform: translateY(4px);
 }
