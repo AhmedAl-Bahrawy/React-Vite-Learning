@@ -1,5 +1,6 @@
 import styles from "./App.module.css";
 import Food from "./components/Food/Food";
+import Car from "./components/Car/Car";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         </p>
       </div>
       <div className={styles.components}>
+        <Car></Car>
         <Food></Food>
       </div>
     </div>
