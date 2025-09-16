@@ -4,6 +4,7 @@ import OnClick from "./components/OnClick/OnClick";
 import Quantity from "./components/Quantity/Quantity";
 import Payment from "./components/Payment/Payment";
 import Shipping from "./components/Shipping/Shipping";
+import ColorPicker from "./components/ColorPicker/ColorPicker";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Quantity />
         <Payment />
         <Shipping />
+        <ColorPicker />
       </div>
     </div>
   );
