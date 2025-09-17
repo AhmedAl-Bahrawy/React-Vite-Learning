@@ -1,6 +1,5 @@
 import styles from "./App.module.css";
-import Food from "./components/Food/Food";
-import Car from "./components/Car/Car";
+import ToDoList from "./components/ToDOList/ToDoList";
 
 function App() {
   return (
@@ -13,8 +12,7 @@ function App() {
         </p>
       </div>
       <div className={styles.components}>
-        <Car></Car>
-        <Food></Food>
+        <ToDoList />
       </div>
     </div>
   );
