@@ -1,18 +1,19 @@
 import styles from "./App.module.css";
-import ToDoList from "./components/ToDOList/ToDoList";
+import UseEffect from "./components/UseEffect/UseEffect";
+
 
 function App() {
   return (
     <div className={styles.app}>
       <div className={styles.header}>
-        <h1 className={styles.title}>React Array Handlers Demo</h1>
+        <h1 className={styles.title}>React useEffect Handlers Demo</h1>
         <p className={styles.subtitle}>
-          Interactive components showcasing different React array handling
+          Interactive components showcasing different React useEffect handling
           patterns
         </p>
       </div>
       <div className={styles.components}>
-        <ToDoList />
+        <UseEffect />
       </div>
     </div>
   );
