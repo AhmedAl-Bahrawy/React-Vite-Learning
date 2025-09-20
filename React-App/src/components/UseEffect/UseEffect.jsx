@@ -2,43 +2,34 @@ import React, { useState, useEffect } from "react";
 import styles from "./UseEffect.module.css";
 
 function UseEffect() {
-    const [count, setCount] = useState(0);
-    const [color, setColor] = useState("red");
+
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
 
     useEffect(() => {
-        document.title = `Count: ${count}, Color ${color}`;
+        window.addEventListener("resize", () => {
+            setWidth(window.innerWidth);
+            setHeight(window.innerHeight);
+        });
+    }, []);
 
-        return () => {
-            // Cleanup function
-        }
-    }, [count, color])
 
     return (
         <div className={styles.container}>
-            <h2 className={styles.title}>UseEffect Counter Demo</h2>
-            <p className={styles.counter} style={{ color: color }}>
-                Count: {count}
-            </p>
-            <div className={styles.buttonGroup}>
-                <button 
-                    className={`${styles.button} ${styles.incrementButton}`}
-                    onClick={() => { setCount(count + 1) }}
-                >
-                    Increment
-                </button>
-                <button 
-                    className={`${styles.button} ${styles.decrementButton}`}
-                    onClick={() => { setCount(count - 1) }}
-                >
-                    Decrement
-                </button>
-                <button 
-                    className={`${styles.button} ${styles.colorButton}`}
-                    onClick={() => { setColor(c => c === "red" ? "blue" : "red") }}
-                >
-                    Change Color
-                </button>
+            <h2 className={styles.title}>Window Size Tracker</h2>
+            <div className={styles.dimensionDisplay}>
+                <div className={styles.dimensionItem}>
+                    <span className={styles.dimensionLabel}>Width:</span>
+                    <span className={styles.dimensionValue}>{width}px</span>
+                </div>
+                <div className={styles.dimensionItem}>
+                    <span className={styles.dimensionLabel}>Height:</span>
+                    <span className={styles.dimensionValue}>{height}px</span>
+                </div>
             </div>
+            <p className={styles.description}>
+                Resize your browser window to see the dimensions update in real-time!
+            </p>
         </div>
     )
 }
