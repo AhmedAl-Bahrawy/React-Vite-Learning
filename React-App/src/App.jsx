@@ -1,5 +1,5 @@
 import styles from "./App.module.css";
-import Clock from "./components/Clock/Clock";
+import ComponentA from "./components/ComponentA"
 
 
 
@@ -13,7 +13,8 @@ function App() {
         </p>
       </div>
       <div className={styles.components}>
-        <Clock/>
+        <ComponentA />
+
       </div>
     </div>
   );
